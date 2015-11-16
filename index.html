@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Todo List</title>
+    <meta name="description" content="A list of my todo items.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <h1>My Todo List</h1>
+
+    <input id="todo-item" type="text">
+    <button id="todo-add-item">Add Item</button>
+
+    <ul id="todo-items"></ul>
+
+    <button id="todo-compose-email">Compose Email</button>
+
+    <section class="hidden" id="email">
+      <textarea cols="25" id="email-body" rows="10"></textarea>
+      <!-- this isn't in the spec so this won't actually do anything -->
+      <button id="email-send">Send Email</button>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
